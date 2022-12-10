@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+class median{
+    private:
+        int m,n;
+        void set(){
+            cin>>m>>n;
+            int p=m*n;
+            int a[p],i;
+            cout<<"Enter elements in the array"<<endl;
+            for(i=0;i<p;i++){
+                cin>>a[i];
+            }
+            sort(a,a+p);
+            p=(p-1)/2;
+            cout<<"Median is: "<<a[p];
+        }
+    public:
+        median(){
+            set();
+        }
+};
+int main() {
+    median k;
+    return 0;
+}
